@@ -1,12 +1,12 @@
-let pics = [
+let img = [
 "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/256742997/movie.293x165.jpg?t=1550167436"
 ];
 
-function updateAllImages() {
-    const imgs = document.querySelectorAll("img");
+function updateAllThumbnails() {
+    const thumbnails = document.querySelectorAll("img");
 
     imgs.forEach(image => {
-        image.src = pics[Math.floor(Math.random() * pics.length)];
+        image.src = img[1];
     });
 }
 
